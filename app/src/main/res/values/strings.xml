@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">GitPractise</string>
+
+    <string name="Port_0_Data">Port 0 Data : Weight Scale Data</string>
+
+    <string name="Port_1_Data">Port 1 Data : Milk Analyzer Data</string>
+
 </resources>

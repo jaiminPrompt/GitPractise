@@ -54,27 +54,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:text="Port 0 Data : 13"
+                    android:text="@string/Port_0_Data"
                     android:layout_marginTop="11dp"
                     android:textColor="@color/black" />
-
-                <TextView
-                    android:id="@+id/txtPortOneData"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:text="Port 1 Data : 13"
-                    android:layout_marginVertical="11dp"
-                    android:textColor="@color/black" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:gravity="center_vertical"
-                android:orientation="vertical">
 
                 <Button
                     android:id="@+id/btnSendDataToDisplay"
@@ -87,6 +69,24 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Send Data To Display 2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtPortOneData"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/Port_1_Data"
+                    android:layout_marginVertical="11dp"
+                    android:textColor="@color/black" />
 
                 <Button
                     android:id="@+id/btnSendData"
