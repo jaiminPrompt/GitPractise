@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         DLog.showLog(false);
 
         //For start port
-        binding.btnStart.setOnClickListener(v -> PromptUtils.startPorts(this, true, true, true, true));
+        binding.btnStart.setOnClickListener(v -> PromptUtils.startPorts(this, false, false, false, false));
 
         //For close port
         binding.btnStop.setOnClickListener(v -> PromptUtils.stopPorts());
@@ -149,7 +149,5 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStop() {
         super.onStop();
-        //Stop All Port while destroy activity
-        PromptUtils.stopPorts();
     }
 }
