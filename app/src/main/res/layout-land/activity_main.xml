@@ -9,127 +9,100 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="50dp"
-        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
         android:padding="16dp"
         tools:context=".MainActivity">
 
-        <View
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
-
         <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-
-            <LinearLayout
+            <Button
+                android:id="@+id/btnStart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="11dp"
-                android:orientation="horizontal">
+                android:layout_marginHorizontal="16dp"
+                android:layout_weight="1"
+                android:text="Start" />
 
-                <Button
-                    android:id="@+id/btnStart"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Start" />
+            <Button
+                android:id="@+id/btnStop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Stop" />
 
-                <Button
-                    android:id="@+id/btnStop"
-                    android:layout_width="0dp"
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtPortZeroData"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
                     android:layout_weight="1"
-                    android:text="Stop" />
+                    android:text="Port 0 Data : "
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/txtPortOneData"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="1"
+                    android:text="Port 1 Data : "
+                    android:textColor="@color/black" />
 
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
                 android:orientation="vertical">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/txtPortZeroData"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="Port 0 Data : 13"
-                        android:textColor="@color/black" />
-
-                    <TextView
-                        android:id="@+id/txtPortOneData"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="Port 1 Data : 13"
-                        android:textColor="@color/black" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal">
-
-                    <Button
-                        android:id="@+id/btnSendDataToDisplay"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:text="Send Data To Display"
-                        android:layout_weight="1"/>
-
-                    <Button
-                        android:id="@+id/btnSendDataToDisplay2"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:text="Send Data To Display 2"
-                        android:layout_weight="1"/>
-
-                    <Button
-                        android:id="@+id/btnSendData"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:text="Send Data To Printer"
-                        android:layout_weight="1"/>
-
-                    <Button
-                        android:id="@+id/btnTareAll"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:text="Tare All Port"
-                        android:layout_weight="1"/>
-
-                </LinearLayout>
-
-                <TextView
-                    android:id="@+id/text_view_sample"
-                    android:layout_width="match_parent"
+                <Button
+                    android:id="@+id/btnSendDataToDisplay"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="18sp" />
+                    android:text="Send Data To Display" />
+
+                <Button
+                    android:id="@+id/btnSendDataToDisplay2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Send Data To Display 2" />
+
+                <Button
+                    android:id="@+id/btnSendData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Send Data To Printer" />
+
+                <Button
+                    android:id="@+id/btnTareAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tare All Port" />
 
             </LinearLayout>
 
         </LinearLayout>
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
 
     </LinearLayout>
 </layout>
