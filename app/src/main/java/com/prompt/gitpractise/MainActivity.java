@@ -63,8 +63,11 @@ public class MainActivity extends AppCompatActivity {
         //Send Data to Printer
         binding.btnSendData.setOnClickListener(v -> {
             String printData = "Hello.." +
+                    "Namskar Amul AMCS" +
                     "\n" +
-                    "Namskar.." +
+                    "Prompt me aapka swagat he" +
+                    "\n" +
+                    "welcome to" +
                     "\n" +
                     "Prompt Equipment Pvt Ltd" +
                     "\n" +
