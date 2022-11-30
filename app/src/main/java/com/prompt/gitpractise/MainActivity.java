@@ -2,6 +2,7 @@ package com.prompt.gitpractise;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -69,11 +70,11 @@ public class MainActivity extends AppCompatActivity {
                     "\n" +
                     "welcome to" +
                     "\n" +
-                    "Prompt Equipment Pvt Ltd" +
+                    "you are willing to pay." +
                     "\n" +
-                    "Thank you.." +
+                    "Pay the price" +
                     "\n" +
-                    "\n";
+                    "you are not willing to pay.";
 
             PromptUtils.writeDataOnSerial(printData, 3);
         });
@@ -152,5 +153,18 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStop() {
         super.onStop();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        int orientation = this.getResources().getConfiguration().orientation;
+        if (orientation == Configuration.ORIENTATION_PORTRAIT) {
+            //code for portrait mode
+            binding.textViewSample.setText("This text is for portrait orientation.");
+        } else {
+            //code for landscape mode
+            binding.textViewSample.setText("This text is for landscape orientation.");
+        }
     }
 }
